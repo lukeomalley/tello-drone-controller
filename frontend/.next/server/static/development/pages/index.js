@@ -93,6 +93,208 @@ module.exports =
 /************************************************************************/
 /******/ ({
 
+/***/ "./components/ButtonLayout.js":
+/*!************************************!*\
+  !*** ./components/ButtonLayout.js ***!
+  \************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var styled_jsx_style__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! styled-jsx/style */ "./node_modules/styled-jsx/style.js");
+/* harmony import */ var styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+var _jsxFileName = "/Users/luke/Desktop/drone/frontend/components/ButtonLayout.js";
+
+
+
+var ButtonLayout = function ButtonLayout(props) {
+  return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "jsx-836662496",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 4
+    },
+    __self: this
+  }, props.children, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default.a, {
+    id: "836662496",
+    __self: this
+  }, ".jsx-836662496{display:grid;grid-template-columns:1fr 1.25fr 1fr;grid-gap:10px;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9sdWtlL0Rlc2t0b3AvZHJvbmUvZnJvbnRlbmQvY29tcG9uZW50cy9CdXR0b25MYXlvdXQuanMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBTU8sQUFFc0IsYUFDd0IscUNBQ3ZCLGNBQ2hCIiwiZmlsZSI6Ii9Vc2Vycy9sdWtlL0Rlc2t0b3AvZHJvbmUvZnJvbnRlbmQvY29tcG9uZW50cy9CdXR0b25MYXlvdXQuanMiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgUmVhY3QgZnJvbSBcInJlYWN0XCI7XG5cbmNvbnN0IEJ1dHRvbkxheW91dCA9IHByb3BzID0+IChcbiAgPGRpdj5cbiAgICB7cHJvcHMuY2hpbGRyZW59XG4gICAgPHN0eWxlIGpzeD5cbiAgICAgIHtgXG4gICAgICAgIGRpc3BsYXk6IGdyaWQ7XG4gICAgICAgIGdyaWQtdGVtcGxhdGUtY29sdW1uczogMWZyIDEuMjVmciAxZnI7XG4gICAgICAgIGdyaWQtZ2FwOiAxMHB4O1xuICAgICAgYH1cbiAgICA8L3N0eWxlPlxuICA8L2Rpdj5cbik7XG5cbmV4cG9ydCBkZWZhdWx0IEJ1dHRvbkxheW91dDtcbiJdfQ== */\n/*@ sourceURL=/Users/luke/Desktop/drone/frontend/components/ButtonLayout.js */"));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (ButtonLayout);
+
+/***/ }),
+
+/***/ "./components/Buttons.js":
+/*!*******************************!*\
+  !*** ./components/Buttons.js ***!
+  \*******************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var styled_jsx_style__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! styled-jsx/style */ "./node_modules/styled-jsx/style.js");
+/* harmony import */ var styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _components_ButtonLayout__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/ButtonLayout */ "./components/ButtonLayout.js");
+/* harmony import */ var _socket__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../socket */ "./socket.js");
+var _jsxFileName = "/Users/luke/Desktop/drone/frontend/components/Buttons.js";
+
+
+
+
+
+var Buttons = function Buttons() {
+  var amount = 100;
+  return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "jsx-2681734821",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 8
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_ButtonLayout__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 9
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("button", {
+    onClick: sendCommand("takeoff"),
+    className: "jsx-2681734821" + " " + "takeoff button",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 10
+    },
+    __self: this
+  }, "Takeoff"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("button", {
+    onClick: sendCommand("forward ".concat(amount)),
+    className: "jsx-2681734821" + " " + "forward button",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 14
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
+    className: "jsx-2681734821" + " " + "symbol",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 18
+    },
+    __self: this
+  }, "\u2191"), "Forward"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("button", {
+    onClick: sendCommand("land"),
+    className: "jsx-2681734821" + " " + "land button",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 21
+    },
+    __self: this
+  }, "Land"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("button", {
+    onClick: sendCommand("left ".concat(amount)),
+    className: "jsx-2681734821" + " " + "left button",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 25
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
+    className: "jsx-2681734821" + " " + "symbol",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 26
+    },
+    __self: this
+  }, "\u2190"), "Left"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("button", {
+    onClick: sendCommand("emergency"),
+    className: "jsx-2681734821" + " " + "emergency button",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 29
+    },
+    __self: this
+  }, "-- Emergency --"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("button", {
+    onClick: sendCommand("right ".concat(amount)),
+    className: "jsx-2681734821" + " " + "right button",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 33
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
+    className: "jsx-2681734821" + " " + "symbol",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 37
+    },
+    __self: this
+  }, "\u2192"), "Right"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("button", {
+    onClick: sendCommand("up ".concat(amount)),
+    className: "jsx-2681734821" + " " + "up button",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 40
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
+    className: "jsx-2681734821" + " " + "symbol",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 41
+    },
+    __self: this
+  }, "\u2912"), "Up"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("button", {
+    onClick: sendCommand("back ".concat(amount)),
+    className: "jsx-2681734821" + " " + "back button",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 44
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
+    className: "jsx-2681734821" + " " + "symbol",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 45
+    },
+    __self: this
+  }, "\u2193"), "Back"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("button", {
+    onClick: sendCommand("down ".concat(amount)),
+    className: "jsx-2681734821" + " " + "down button",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 48
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
+    className: "jsx-2681734821" + " " + "symbol",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 49
+    },
+    __self: this
+  }, "\u2913"), "Down")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default.a, {
+    id: "2681734821",
+    __self: this
+  }, "button.jsx-2681734821{border:0;background:#fff;border:2px solid transparent;color:black;font-size:2rem;position:relative;font-family:\"Roboto\";}.button.jsx-2681734821:active{-webkit-transform:translateY(2px);-ms-transform:translateY(2px);transform:translateY(2px);}.button.jsx-2681734821:focus{outline:none;}.takeoff.jsx-2681734821{color:white;background:#d65365;}.land.jsx-2681734821{color:white;background:#4fd68e;}.forward.jsx-2681734821{background:#67eaef;}.back.jsx-2681734821{background:#67eaef;}.left.jsx-2681734821{background:#67eaef;}.right.jsx-2681734821{background:#67eaef;}.emergency.jsx-2681734821{background:orange;}span.symbol.jsx-2681734821{display:block;font-size:2rem;font-weight:400;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9sdWtlL0Rlc2t0b3AvZHJvbmUvZnJvbnRlbmQvY29tcG9uZW50cy9CdXR0b25zLmpzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQW9EUyxBQUdzQixBQVNpQixBQUdiLEFBR0QsQUFJQSxBQUlPLEFBR0EsQUFHQSxBQUdBLEFBR0QsQUFHSixTQXJDRSxHQWVHLEFBSUEsQ0FQckIsQ0EwQmlCLElBSGpCLENBWkEsQUFHQSxBQUdBLEFBR0EsTUEvQitCLElBc0NiLEVBdkJsQixBQUlBLGNBb0JBLFNBdENjLFlBQ0csZUFDRyxTQUtwQixTQUp1QixxQkFDdkIiLCJmaWxlIjoiL1VzZXJzL2x1a2UvRGVza3RvcC9kcm9uZS9mcm9udGVuZC9jb21wb25lbnRzL0J1dHRvbnMuanMiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgUmVhY3QgZnJvbSBcInJlYWN0XCI7XG5pbXBvcnQgQnV0dG9uTGF5b3V0IGZyb20gXCIuLi9jb21wb25lbnRzL0J1dHRvbkxheW91dFwiO1xuaW1wb3J0IHNvY2tldCBmcm9tIFwiLi4vc29ja2V0XCI7XG5cbmNvbnN0IEJ1dHRvbnMgPSAoKSA9PiB7XG4gIGNvbnN0IGFtb3VudCA9IDEwMDtcbiAgcmV0dXJuIChcbiAgICA8ZGl2PlxuICAgICAgPEJ1dHRvbkxheW91dD5cbiAgICAgICAgPGJ1dHRvbiBjbGFzc05hbWU9XCJ0YWtlb2ZmIGJ1dHRvblwiIG9uQ2xpY2s9e3NlbmRDb21tYW5kKGB0YWtlb2ZmYCl9PlxuICAgICAgICAgIFRha2VvZmZcbiAgICAgICAgPC9idXR0b24+XG5cbiAgICAgICAgPGJ1dHRvblxuICAgICAgICAgIGNsYXNzTmFtZT1cImZvcndhcmQgYnV0dG9uXCJcbiAgICAgICAgICBvbkNsaWNrPXtzZW5kQ29tbWFuZChgZm9yd2FyZCAke2Ftb3VudH1gKX1cbiAgICAgICAgPlxuICAgICAgICAgIDxzcGFuIGNsYXNzTmFtZT1cInN5bWJvbFwiPuKGkTwvc3Bhbj5Gb3J3YXJkXG4gICAgICAgIDwvYnV0dG9uPlxuXG4gICAgICAgIDxidXR0b24gY2xhc3NOYW1lPVwibGFuZCBidXR0b25cIiBvbkNsaWNrPXtzZW5kQ29tbWFuZChgbGFuZGApfT5cbiAgICAgICAgICBMYW5kXG4gICAgICAgIDwvYnV0dG9uPlxuXG4gICAgICAgIDxidXR0b24gY2xhc3NOYW1lPVwibGVmdCBidXR0b25cIiBvbkNsaWNrPXtzZW5kQ29tbWFuZChgbGVmdCAke2Ftb3VudH1gKX0+XG4gICAgICAgICAgPHNwYW4gY2xhc3NOYW1lPVwic3ltYm9sXCI+4oaQPC9zcGFuPkxlZnRcbiAgICAgICAgPC9idXR0b24+XG5cbiAgICAgICAgPGJ1dHRvbiBjbGFzc05hbWU9XCJlbWVyZ2VuY3kgYnV0dG9uXCIgb25DbGljaz17c2VuZENvbW1hbmQoYGVtZXJnZW5jeWApfT5cbiAgICAgICAgICAtLSBFbWVyZ2VuY3kgLS1cbiAgICAgICAgPC9idXR0b24+XG5cbiAgICAgICAgPGJ1dHRvblxuICAgICAgICAgIGNsYXNzTmFtZT1cInJpZ2h0IGJ1dHRvblwiXG4gICAgICAgICAgb25DbGljaz17c2VuZENvbW1hbmQoYHJpZ2h0ICR7YW1vdW50fWApfVxuICAgICAgICA+XG4gICAgICAgICAgPHNwYW4gY2xhc3NOYW1lPVwic3ltYm9sXCI+4oaSPC9zcGFuPlJpZ2h0XG4gICAgICAgIDwvYnV0dG9uPlxuXG4gICAgICAgIDxidXR0b24gY2xhc3NOYW1lPVwidXAgYnV0dG9uXCIgb25DbGljaz17c2VuZENvbW1hbmQoYHVwICR7YW1vdW50fWApfT5cbiAgICAgICAgICA8c3BhbiBjbGFzc05hbWU9XCJzeW1ib2xcIj7ipJI8L3NwYW4+VXBcbiAgICAgICAgPC9idXR0b24+XG5cbiAgICAgICAgPGJ1dHRvbiBjbGFzc05hbWU9XCJiYWNrIGJ1dHRvblwiIG9uQ2xpY2s9e3NlbmRDb21tYW5kKGBiYWNrICR7YW1vdW50fWApfT5cbiAgICAgICAgICA8c3BhbiBjbGFzc05hbWU9XCJzeW1ib2xcIj7ihpM8L3NwYW4+QmFja1xuICAgICAgICA8L2J1dHRvbj5cblxuICAgICAgICA8YnV0dG9uIGNsYXNzTmFtZT1cImRvd24gYnV0dG9uXCIgb25DbGljaz17c2VuZENvbW1hbmQoYGRvd24gJHthbW91bnR9YCl9PlxuICAgICAgICAgIDxzcGFuIGNsYXNzTmFtZT1cInN5bWJvbFwiPuKkkzwvc3Bhbj5Eb3duXG4gICAgICAgIDwvYnV0dG9uPlxuICAgICAgPC9CdXR0b25MYXlvdXQ+XG4gICAgICA8c3R5bGUganN4PlxuICAgICAgICB7YFxuICAgICAgICAgIGJ1dHRvbiB7XG4gICAgICAgICAgICBib3JkZXI6IDA7XG4gICAgICAgICAgICBiYWNrZ3JvdW5kOiAjZmZmO1xuICAgICAgICAgICAgYm9yZGVyOiAycHggc29saWQgdHJhbnNwYXJlbnQ7XG4gICAgICAgICAgICBjb2xvcjogYmxhY2s7XG4gICAgICAgICAgICBmb250LXNpemU6IDJyZW07XG4gICAgICAgICAgICBwb3NpdGlvbjogcmVsYXRpdmU7XG4gICAgICAgICAgICBmb250LWZhbWlseTogXCJSb2JvdG9cIjtcbiAgICAgICAgICB9XG4gICAgICAgICAgLmJ1dHRvbjphY3RpdmUge1xuICAgICAgICAgICAgdHJhbnNmb3JtOiB0cmFuc2xhdGVZKDJweCk7XG4gICAgICAgICAgfVxuICAgICAgICAgIC5idXR0b246Zm9jdXMge1xuICAgICAgICAgICAgb3V0bGluZTogbm9uZTtcbiAgICAgICAgICB9XG4gICAgICAgICAgLnRha2VvZmYge1xuICAgICAgICAgICAgY29sb3I6IHdoaXRlO1xuICAgICAgICAgICAgYmFja2dyb3VuZDogI2Q2NTM2NTtcbiAgICAgICAgICB9XG4gICAgICAgICAgLmxhbmQge1xuICAgICAgICAgICAgY29sb3I6IHdoaXRlO1xuICAgICAgICAgICAgYmFja2dyb3VuZDogIzRmZDY4ZTtcbiAgICAgICAgICB9XG4gICAgICAgICAgLmZvcndhcmQge1xuICAgICAgICAgICAgYmFja2dyb3VuZDogIzY3ZWFlZjtcbiAgICAgICAgICB9XG4gICAgICAgICAgLmJhY2sge1xuICAgICAgICAgICAgYmFja2dyb3VuZDogIzY3ZWFlZjtcbiAgICAgICAgICB9XG4gICAgICAgICAgLmxlZnQge1xuICAgICAgICAgICAgYmFja2dyb3VuZDogIzY3ZWFlZjtcbiAgICAgICAgICB9XG4gICAgICAgICAgLnJpZ2h0IHtcbiAgICAgICAgICAgIGJhY2tncm91bmQ6ICM2N2VhZWY7XG4gICAgICAgICAgfVxuICAgICAgICAgIC5lbWVyZ2VuY3kge1xuICAgICAgICAgICAgYmFja2dyb3VuZDogb3JhbmdlO1xuICAgICAgICAgIH1cbiAgICAgICAgICBzcGFuLnN5bWJvbCB7XG4gICAgICAgICAgICBkaXNwbGF5OiBibG9jaztcbiAgICAgICAgICAgIGZvbnQtc2l6ZTogMnJlbTtcbiAgICAgICAgICAgIGZvbnQtd2VpZ2h0OiA0MDA7XG4gICAgICAgICAgfVxuICAgICAgICBgfVxuICAgICAgPC9zdHlsZT5cbiAgICA8L2Rpdj5cbiAgKTtcbn07XG5cbmZ1bmN0aW9uIHNlbmRDb21tYW5kKGNvbW1hbmQpIHtcbiAgcmV0dXJuIGZ1bmN0aW9uKCkge1xuICAgIGNvbnNvbGUubG9nKGBTZW5kaW5nIHRoZSBjb21tYW5kOiAke2NvbW1hbmR9YCk7XG4gICAgc29ja2V0LmVtaXQoXCJjb21tYW5kXCIsIGNvbW1hbmQpO1xuICB9O1xufVxuXG5leHBvcnQgZGVmYXVsdCBCdXR0b25zO1xuIl19 */\n/*@ sourceURL=/Users/luke/Desktop/drone/frontend/components/Buttons.js */"));
+};
+
+function sendCommand(command) {
+  return function () {
+    console.log("Sending the command: ".concat(command));
+    _socket__WEBPACK_IMPORTED_MODULE_3__["default"].emit("command", command);
+  };
+}
+
+/* harmony default export */ __webpack_exports__["default"] = (Buttons);
+
+/***/ }),
+
 /***/ "./components/Header.js":
 /*!******************************!*\
   !*** ./components/Header.js ***!
@@ -106,29 +308,71 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! next/head */ "next/head");
+/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_head__WEBPACK_IMPORTED_MODULE_2__);
 var _jsxFileName = "/Users/luke/Desktop/drone/frontend/components/Header.js";
+
 
 
 
 var Header = function Header() {
   return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-    className: "jsx-3868695402",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 5
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h1", {
-    className: "jsx-3868695402",
+    className: "jsx-2159196996",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 6
     },
     __self: this
-  }, "Drone Command Center"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default.a, {
-    id: "3868695402",
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(next_head__WEBPACK_IMPORTED_MODULE_2___default.a, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 7
+    },
     __self: this
-  }, "h1.jsx-3868695402{text-align:center;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9sdWtlL0Rlc2t0b3AvZHJvbmUvZnJvbnRlbmQvY29tcG9uZW50cy9IZWFkZXIuanMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBT1MsQUFHK0Isa0JBQ3BCIiwiZmlsZSI6Ii9Vc2Vycy9sdWtlL0Rlc2t0b3AvZHJvbmUvZnJvbnRlbmQvY29tcG9uZW50cy9IZWFkZXIuanMiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgUmVhY3QgZnJvbSBcInJlYWN0XCI7XG5cbmNvbnN0IEhlYWRlciA9ICgpID0+IHtcbiAgcmV0dXJuIChcbiAgICA8ZGl2PlxuICAgICAgPGgxPkRyb25lIENvbW1hbmQgQ2VudGVyPC9oMT5cbiAgICAgIDxzdHlsZSBqc3g+XG4gICAgICAgIHtgXG4gICAgICAgICAgaDEge1xuICAgICAgICAgICAgdGV4dC1hbGlnbjogY2VudGVyO1xuICAgICAgICAgIH1cbiAgICAgICAgYH1cbiAgICAgIDwvc3R5bGU+XG4gICAgPC9kaXY+XG4gICk7XG59O1xuXG5leHBvcnQgZGVmYXVsdCBIZWFkZXI7XG4iXX0= */\n/*@ sourceURL=/Users/luke/Desktop/drone/frontend/components/Header.js */"));
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("meta", {
+    charSet: "UTF-8",
+    className: "jsx-2159196996",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 8
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("title", {
+    className: "jsx-2159196996",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 9
+    },
+    __self: this
+  }, "DJI Tello Controller"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("meta", {
+    name: "viewport",
+    content: "width=device-width, initial-scale=1",
+    className: "jsx-2159196996",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 10
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("link", {
+    href: "https://fonts.googleapis.com/css?family=Roboto&display=swap",
+    rel: "stylesheet",
+    className: "jsx-2159196996",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 11
+    },
+    __self: this
+  })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h1", {
+    className: "jsx-2159196996",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 17
+    },
+    __self: this
+  }, "Drone Command Center"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default.a, {
+    id: "2159196996",
+    __self: this
+  }, "h1.jsx-2159196996{text-align:center;color:white;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9sdWtlL0Rlc2t0b3AvZHJvbmUvZnJvbnRlbmQvY29tcG9uZW50cy9IZWFkZXIuanMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBa0JTLEFBRytCLGtCQUNOLFlBQ2QiLCJmaWxlIjoiL1VzZXJzL2x1a2UvRGVza3RvcC9kcm9uZS9mcm9udGVuZC9jb21wb25lbnRzL0hlYWRlci5qcyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCBSZWFjdCBmcm9tIFwicmVhY3RcIjtcbmltcG9ydCBOZXh0SGVhZCBmcm9tIFwibmV4dC9oZWFkXCI7XG5cbmNvbnN0IEhlYWRlciA9ICgpID0+IHtcbiAgcmV0dXJuIChcbiAgICA8ZGl2PlxuICAgICAgPE5leHRIZWFkPlxuICAgICAgICA8bWV0YSBjaGFyU2V0PVwiVVRGLThcIiAvPlxuICAgICAgICA8dGl0bGU+REpJIFRlbGxvIENvbnRyb2xsZXI8L3RpdGxlPlxuICAgICAgICA8bWV0YSBuYW1lPVwidmlld3BvcnRcIiBjb250ZW50PVwid2lkdGg9ZGV2aWNlLXdpZHRoLCBpbml0aWFsLXNjYWxlPTFcIiAvPlxuICAgICAgICA8bGlua1xuICAgICAgICAgIGhyZWY9XCJodHRwczovL2ZvbnRzLmdvb2dsZWFwaXMuY29tL2Nzcz9mYW1pbHk9Um9ib3RvJmRpc3BsYXk9c3dhcFwiXG4gICAgICAgICAgcmVsPVwic3R5bGVzaGVldFwiXG4gICAgICAgIC8+XG4gICAgICA8L05leHRIZWFkPlxuXG4gICAgICA8aDE+RHJvbmUgQ29tbWFuZCBDZW50ZXI8L2gxPlxuICAgICAgPHN0eWxlIGpzeD5cbiAgICAgICAge2BcbiAgICAgICAgICBoMSB7XG4gICAgICAgICAgICB0ZXh0LWFsaWduOiBjZW50ZXI7XG4gICAgICAgICAgICBjb2xvcjogd2hpdGU7XG4gICAgICAgICAgfVxuICAgICAgICBgfVxuICAgICAgPC9zdHlsZT5cbiAgICA8L2Rpdj5cbiAgKTtcbn07XG5cbmV4cG9ydCBkZWZhdWx0IEhlYWRlcjtcbiJdfQ== */\n/*@ sourceURL=/Users/luke/Desktop/drone/frontend/components/Header.js */"));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Header);
@@ -896,74 +1140,57 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _components_Header__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/Header */ "./components/Header.js");
+/* harmony import */ var _components_Buttons__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/Buttons */ "./components/Buttons.js");
 var _jsxFileName = "/Users/luke/Desktop/drone/frontend/pages/index.js";
+
 
 
 
 
 var Index = function Index() {
   return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-    className: "jsx-3231165989",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 6
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_Header__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    className: "jsx-859180424",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 7
     },
     __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("button", {
-    className: "jsx-3231165989",
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_Header__WEBPACK_IMPORTED_MODULE_2__["default"], {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 8
     },
     __self: this
-  }, "Takeoff"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("button", {
-    className: "jsx-3231165989",
+  }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_Buttons__WEBPACK_IMPORTED_MODULE_3__["default"], {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 9
     },
     __self: this
-  }, "Land"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("button", {
-    className: "jsx-3231165989",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 10
-    },
+  }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default.a, {
+    id: "859180424",
     __self: this
-  }, "Forward"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("button", {
-    className: "jsx-3231165989",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 11
-    },
-    __self: this
-  }, "Back"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("button", {
-    className: "jsx-3231165989",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 12
-    },
-    __self: this
-  }, "Up"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("button", {
-    className: "jsx-3231165989",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 13
-    },
-    __self: this
-  }, "Down"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default.a, {
-    id: "3231165989",
-    __self: this
-  }, "body{font-family:\"Operator Mono\",monospace;font-weight:900;font-size:1rem;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9sdWtlL0Rlc2t0b3AvZHJvbmUvZnJvbnRlbmQvcGFnZXMvaW5kZXguanMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBY1MsQUFHb0Qsc0NBQ3ZCLGdCQUNELGVBQ2pCIiwiZmlsZSI6Ii9Vc2Vycy9sdWtlL0Rlc2t0b3AvZHJvbmUvZnJvbnRlbmQvcGFnZXMvaW5kZXguanMiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgUmVhY3QgZnJvbSBcInJlYWN0XCI7XG5pbXBvcnQgSGVhZGVyIGZyb20gXCIuLi9jb21wb25lbnRzL0hlYWRlclwiO1xuXG5jb25zdCBJbmRleCA9ICgpID0+IHtcbiAgcmV0dXJuIChcbiAgICA8ZGl2PlxuICAgICAgPEhlYWRlciAvPlxuICAgICAgPGJ1dHRvbj5UYWtlb2ZmPC9idXR0b24+XG4gICAgICA8YnV0dG9uPkxhbmQ8L2J1dHRvbj5cbiAgICAgIDxidXR0b24+Rm9yd2FyZDwvYnV0dG9uPlxuICAgICAgPGJ1dHRvbj5CYWNrPC9idXR0b24+XG4gICAgICA8YnV0dG9uPlVwPC9idXR0b24+XG4gICAgICA8YnV0dG9uPkRvd248L2J1dHRvbj5cbiAgICAgIDxzdHlsZSBqc3ggZ2xvYmFsPlxuICAgICAgICB7YFxuICAgICAgICAgIGJvZHkge1xuICAgICAgICAgICAgZm9udC1mYW1pbHk6IFwiT3BlcmF0b3IgTW9ub1wiLCBtb25vc3BhY2U7XG4gICAgICAgICAgICBmb250LXdlaWdodDogOTAwO1xuICAgICAgICAgICAgZm9udC1zaXplOiAxcmVtO1xuICAgICAgICAgIH1cbiAgICAgICAgYH1cbiAgICAgIDwvc3R5bGU+XG4gICAgPC9kaXY+XG4gICk7XG59O1xuXG5leHBvcnQgZGVmYXVsdCBJbmRleDtcbiJdfQ== */\n/*@ sourceURL=/Users/luke/Desktop/drone/frontend/pages/index.js */"));
+  }, "body{border:40px solid transparent;font-family:\"Roboto\",monospace;font-weight:900;font-size:1rem;background:#142451;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9sdWtlL0Rlc2t0b3AvZHJvbmUvZnJvbnRlbmQvcGFnZXMvaW5kZXguanMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBVVMsQUFHMkMsOEJBQ0UsK0JBQ2hCLGdCQUNELGVBQ0ksbUJBQ3JCIiwiZmlsZSI6Ii9Vc2Vycy9sdWtlL0Rlc2t0b3AvZHJvbmUvZnJvbnRlbmQvcGFnZXMvaW5kZXguanMiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgUmVhY3QgZnJvbSBcInJlYWN0XCI7XG5pbXBvcnQgSGVhZGVyIGZyb20gXCIuLi9jb21wb25lbnRzL0hlYWRlclwiO1xuaW1wb3J0IEJ1dHRvbnMgZnJvbSBcIi4uL2NvbXBvbmVudHMvQnV0dG9uc1wiO1xuXG5jb25zdCBJbmRleCA9ICgpID0+IHtcbiAgcmV0dXJuIChcbiAgICA8ZGl2PlxuICAgICAgPEhlYWRlciAvPlxuICAgICAgPEJ1dHRvbnMgLz5cbiAgICAgIDxzdHlsZSBqc3ggZ2xvYmFsPlxuICAgICAgICB7YFxuICAgICAgICAgIGJvZHkge1xuICAgICAgICAgICAgYm9yZGVyOiA0MHB4IHNvbGlkIHRyYW5zcGFyZW50O1xuICAgICAgICAgICAgZm9udC1mYW1pbHk6IFwiUm9ib3RvXCIsIG1vbm9zcGFjZTtcbiAgICAgICAgICAgIGZvbnQtd2VpZ2h0OiA5MDA7XG4gICAgICAgICAgICBmb250LXNpemU6IDFyZW07XG4gICAgICAgICAgICBiYWNrZ3JvdW5kOiAjMTQyNDUxO1xuICAgICAgICAgIH1cbiAgICAgICAgYH1cbiAgICAgIDwvc3R5bGU+XG4gICAgPC9kaXY+XG4gICk7XG59O1xuXG5leHBvcnQgZGVmYXVsdCBJbmRleDtcbiJdfQ== */\n/*@ sourceURL=/Users/luke/Desktop/drone/frontend/pages/index.js */"));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Index);
+
+/***/ }),
+
+/***/ "./socket.js":
+/*!*******************!*\
+  !*** ./socket.js ***!
+  \*******************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var socket_io_client__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! socket.io-client */ "socket.io-client");
+/* harmony import */ var socket_io_client__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(socket_io_client__WEBPACK_IMPORTED_MODULE_0__);
+
+var socket = socket_io_client__WEBPACK_IMPORTED_MODULE_0___default()("http://localhost:6767");
+/* harmony default export */ __webpack_exports__["default"] = (socket);
 
 /***/ }),
 
@@ -979,6 +1206,17 @@ module.exports = __webpack_require__(/*! /Users/luke/Desktop/drone/frontend/page
 
 /***/ }),
 
+/***/ "next/head":
+/*!****************************!*\
+  !*** external "next/head" ***!
+  \****************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("next/head");
+
+/***/ }),
+
 /***/ "react":
 /*!************************!*\
   !*** external "react" ***!
@@ -987,6 +1225,17 @@ module.exports = __webpack_require__(/*! /Users/luke/Desktop/drone/frontend/page
 /***/ (function(module, exports) {
 
 module.exports = require("react");
+
+/***/ }),
+
+/***/ "socket.io-client":
+/*!***********************************!*\
+  !*** external "socket.io-client" ***!
+  \***********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("socket.io-client");
 
 /***/ })
 
