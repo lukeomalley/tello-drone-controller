@@ -1,6 +1,6 @@
-import React from "react";
-import ButtonLayout from "../components/ButtonLayout";
-import socket from "../socket";
+import React from 'react';
+import ButtonLayout from '../components/ButtonLayout';
+import socket from '../socket';
 
 const Buttons = () => {
   const amount = 100;
@@ -48,6 +48,18 @@ const Buttons = () => {
         <button className="down button" onClick={sendCommand(`down ${amount}`)}>
           <span className="symbol">⤓</span>Down
         </button>
+
+        <button className="flip button" onClick={sendCommand(`flip l`)}>
+          Flip Left
+        </button>
+
+        <button className="flip button" onClick={sendCommand(`flip b`)}>
+          Flip Back
+        </button>
+
+        <button className="flip button" onClick={sendCommand(`flip r`)}>
+          Flip Right
+        </button>
       </ButtonLayout>
       <style jsx>
         {`
@@ -58,7 +70,7 @@ const Buttons = () => {
             color: black;
             font-size: 2rem;
             position: relative;
-            font-family: "Roboto";
+            font-family: 'Roboto';
           }
           .button:active {
             transform: translateY(2px);
@@ -103,7 +115,7 @@ const Buttons = () => {
 function sendCommand(command) {
   return function() {
     console.log(`Sending the command: ${command}`);
-    socket.emit("command", command);
+    socket.emit('command', command);
   };
 }
 

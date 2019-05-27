@@ -13,8 +13,7 @@ const Header = () => {
           rel="stylesheet"
         />
       </NextHead>
-
-      <h1>Drone Command Center</h1>
+      <h1>Drone Controller</h1>
       <style jsx>
         {`
           h1 {
